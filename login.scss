@@ -1,0 +1,19 @@
+@use "./Essentials/layout";
+@use "./Essentials/Varibles" as v;
+@use "./Essentials/Minxes";
+
+.sign-up-container {
+  form {
+    .form-03 {
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+
+      a {
+        text-decoration: none;
+        color: v.$secondary2;
+        // font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.sign-up-container form .form-03 {
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.sign-up-container form .form-03 a {
+  text-decoration: none;
+  color: #db4444;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,51 @@
+@use "./Essentials/layout";
+
+.search-wrapper input:focus {
+  outline: none;
+}
+
+.falsh-items:hover {
+  background-color: black;
+}
+.flash-img-wrapper::after {
+  content: "";
+  transition: background-color ease 0.4s;
+}
+
+.flash-img-wrapper:hover::after {
+  content: "Add To Cart";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 20%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.add-to-cart p {
+  font-weight: 600;
+}
+.primary-button {
+  @extend %primary-button;
+  border: 1px solid transparent;
+  transition: border, background-color ease 0.2s;
+}
+
+.primary-button:hover {
+  @extend %primary-button-hover;
+}
+
+footer input:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

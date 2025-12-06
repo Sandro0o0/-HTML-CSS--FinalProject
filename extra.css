@@ -1,0 +1,12 @@
+.flash-content .flash-review i {
+  color: orange;
+}
+
+.empty-star {
+  color: #000 !important;
+  opacity: 25%;
+}
+
+.flash-content h1 {
+  font-weight: 600;
+}

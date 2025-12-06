@@ -1,0 +1,62 @@
+.primary-button {
+  background-color: #db4444;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 16px 48px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.primary-button:hover {
+  background: transparent;
+  border: #db4444 1px solid;
+  color: #db4444;
+}
+
+.search-wrapper input:focus {
+  outline: none;
+}
+
+.falsh-items:hover {
+  background-color: black;
+}
+
+.flash-img-wrapper::after {
+  content: "";
+  transition: background-color ease 0.4s;
+}
+
+.flash-img-wrapper:hover::after {
+  content: "Add To Cart";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 20%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.add-to-cart p {
+  font-weight: 600;
+}
+
+.primary-button {
+  border: 1px solid transparent;
+  transition: border, background-color ease 0.2s;
+}
+
+footer input:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=psevdo.css.map */

@@ -1,0 +1,50 @@
+@use "./Varibles" as v;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%primary-button {
+  background-color: v.$secondary2;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 16px 48px;
+  // padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+%secondary-button {
+  background-color: v.$primary;
+  border: none;
+  color: #fff;
+  padding: 16px 48px;
+  // padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+%primary-button-hover {
+  background: transparent;
+  border: v.$secondary2 1px solid;
+  color: v.$secondary2;
+}
