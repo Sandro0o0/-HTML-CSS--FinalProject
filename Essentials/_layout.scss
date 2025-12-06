@@ -34,7 +34,7 @@
 
 %secondary-button {
   background-color: v.$primary;
-  border: none;
+  border: 1px solid transparent;
   color: #fff;
   padding: 16px 48px;
   // padding: 5px 10px;
@@ -47,4 +47,9 @@
   background: transparent;
   border: v.$secondary2 1px solid;
   color: v.$secondary2;
+}
+
+%secondary-button-hover {
+  background-color: transparent;
+  border: 1px solid #fff;
 }

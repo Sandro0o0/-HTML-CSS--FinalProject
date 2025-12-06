@@ -53,10 +53,46 @@
   transition: border, background-color ease 0.2s;
 }
 
+.experience-button {
+  border: 1px solid #000 !important;
+  transition: 0.3s background-color ease;
+}
+
+.experience-button:hover {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+}
+
+.best-selling-button {
+  border: 1px solid transparent !important;
+  transition: 0.3s background-color ease;
+}
+
+.best-selling-button:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
 footer input:focus {
   outline: none;
 }
 
 a:hover {
   text-decoration: none;
+  color: #db4444 !important;
+}
+
+.hero-content p:hover {
+  text-decoration: none;
+  color: #db4444 !important;
+}
+
+span:hover {
+  text-decoration: none !important;
+  cursor: default;
+}
+
+header .nav-tools-icon-wrapper :hover {
+  color: red;
 }/*# sourceMappingURL=psevdo.css.map */

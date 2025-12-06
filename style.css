@@ -32,7 +32,7 @@ main .button-wrapper button, main .best-selling .best-selling-02 .best-selling-b
 
 main .experience .experience-content .experience-button, main .product-items-wrapper .flash-new {
   background-color: #00ff66;
-  border: none;
+  border: 1px solid transparent;
   color: #fff;
   padding: 16px 48px;
   text-align: center;
@@ -545,6 +545,7 @@ footer .footer-content .footer-items h2 {
 }
 footer .footer-content .footer-items p {
   font-size: 14px;
+  font-weight: 600;
 }
 footer .footer-content .footer-items div {
   gap: 16px;
@@ -554,6 +555,7 @@ footer .footer-content .footer-item-01 .footer-input-wrapper {
   align-items: center;
   border: 2px solid #fff;
   padding: 10px 15px;
+  border-radius: 5px;
 }
 footer .footer-content .footer-item-01 .footer-input-wrapper input {
   background: transparent;

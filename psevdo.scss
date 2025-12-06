@@ -1,4 +1,5 @@
 @use "./Essentials/layout";
+@use "./Essentials/Varibles" as v;
 
 .search-wrapper input:focus {
   outline: none;
@@ -32,6 +33,9 @@
 .add-to-cart p {
   font-weight: 600;
 }
+
+// buttons-START--------------------------------------------------------------------
+
 .primary-button {
   @extend %primary-button;
   border: 1px solid transparent;
@@ -42,10 +46,47 @@
   @extend %primary-button-hover;
 }
 
+.experience-button {
+  border: 1px solid #000 !important;
+  transition: 0.3s background-color ease;
+}
+
+.experience-button:hover {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+}
+
+.best-selling-button {
+  border: 1px solid transparent !important;
+  transition: 0.3s background-color ease;
+}
+.best-selling-button:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+// buttons-END-------------------------------------------------------------------
+
 footer input:focus {
   outline: none;
 }
 
 a:hover {
   text-decoration: none;
+  color: v.$secondary2 !important;
+}
+
+.hero-content p:hover {
+  text-decoration: none;
+  color: v.$secondary2 !important;
+}
+
+span:hover {
+  text-decoration: none !important;
+  cursor: default;
+}
+
+header .nav-tools-icon-wrapper :hover {
+  color: red;
 }
