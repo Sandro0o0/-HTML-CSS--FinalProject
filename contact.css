@@ -11,6 +11,7 @@
 .contact {
   margin: 100px 0px;
   gap: 30px;
+  padding: 20px;
 }
 .contact .contact-content {
   gap: 25px;
@@ -74,4 +75,42 @@
 }
 .contact .contact-form .form-02 textarea:focus {
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .contact-form {
+    width: inherit;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contact .contact-content {
+    text-align: center;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr 1fr;
+  }
+  .contact .contact-content .content-01 {
+    justify-content: center;
+  }
+  .contact .contact-form .form-01 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .contact-form .form-01 input {
+    width: 97%;
+    text-align: center;
+  }
+  .contact .contact-form .form-03 {
+    display: flex;
+    justify-content: center !important;
+  }
 }/*# sourceMappingURL=contact.css.map */
