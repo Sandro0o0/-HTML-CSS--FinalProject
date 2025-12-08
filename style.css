@@ -77,6 +77,12 @@ header {
   width: 100%;
   border-bottom: 1px solid black;
 }
+header .hamburger-wrapper {
+  display: none;
+}
+header .hamburger-menu {
+  display: none;
+}
 header h1 {
   font-size: 24px;
   font-weight: bold;
@@ -247,7 +253,7 @@ main .button-wrapper {
   border-bottom: 1px solid #000;
 }
 main .categories {
-  width: 100%;
+  max-width: 100%;
   margin-top: 10vh;
 }
 main .categories .categories-01 {
@@ -276,8 +282,9 @@ main .categories .categories-02 .categories-arrows i {
 }
 main .categories .categories-items-wrapper {
   padding: 30px 0px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   gap: 20px;
   border-bottom: 1px solid #000;
 }
@@ -288,6 +295,8 @@ main .categories .categories-items-wrapper .categories-items {
   justify-content: center;
   border: 1px solid black;
   padding: 20px 0px;
+  width: 150px;
+  height: 100px;
 }
 main .best-selling {
   margin-top: 150px;
@@ -645,4 +654,254 @@ footer .bottom-footer p {
 }
 .flash-items .flash-content .flash-review ul li {
   list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .top-header {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .top-header select {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  main .main-wrapper {
+    padding: 0px;
+  }
+  main section {
+    padding: 0px 20px;
+  }
+  main .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .hero .hero-content {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 20px 0px;
+  }
+  main .hero .hero-content li {
+    text-align: center;
+  }
+  main .hero .hero-content li i {
+    display: none;
+  }
+  main .hero .hero-content li a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-header {
+    display: none;
+  }
+  header .navigation .nav-tools .search-wrapper {
+    margin-right: 40px;
+  }
+  header .navigation .nav-tools .nav-tools-icon-wrapper {
+    display: none;
+  }
+  header .header-links {
+    display: none;
+  }
+  header .hamburger-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 3;
+  }
+  #hamburger-toggle {
+    display: block !important;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+  }
+  .hamburger-wrapper i {
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    /* width: 100px; */
+    z-index: 2;
+    color: #db4444;
+  }
+  #hamburger-toggle:checked {
+    border: none;
+    /* visibility: hidden; */
+  }
+  #hamburger-toggle:checked + .hamburger-menu,
+  #hamburger-toggle:checked + .hamburger-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .hamburger-menu label {
+    position: relative;
+    z-index: 3;
+  }
+  .hamburger-menu label ul {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #header-login {
+    display: none;
+  }
+  .hamburger-menu li {
+    position: relative;
+  }
+  .hamburger-menu ul li a {
+    color: white;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+  }
+  .burger-menu label ul {
+    display: flex;
+    flex-direction: column;
+  }
+  main .hero .hero-content {
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+  main .hero .hero-content li p {
+    width: 100%;
+  }
+  main .hero .hero-content li a {
+    width: 100%;
+  }
+  main .flash-sales .flash-02 .flash-timer {
+    display: none;
+  }
+  main .flash-sales .flash-02 .flash-arrows {
+    display: none;
+  }
+  main .categories .categories-02 .categories-arrows {
+    display: none;
+  }
+  main .experience {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  main .experience .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  main .experience .experience-content h1 {
+    font-size: 30px;
+  }
+  main .experience .experience-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .experience .experience-items-wrapper .experience-items {
+    width: 50px;
+    height: 50px;
+  }
+  main .features .features-items-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  main .features .features-items-container .features-items {
+    width: 300px;
+    padding: 0 !important;
+    margin: 0;
+    height: 200px;
+  }
+  main .features .features-items-container .features-items h1 {
+    font-size: 17px;
+  }
+  main .features .features-items-container .features-items p {
+    font-size: 13px;
+  }
+  main .features .features-items-container .features-items-03 img,
+  main .features .features-items-container .features-items-04 img {
+    width: 40%;
+    right: 10% !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .navigation {
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+  }
+  header .navigation .nav-tools .search-wrapper input {
+    margin: 0px;
+    width: 120px;
+  }
+  header h1 {
+    font-size: 17px;
+  }
+  main .hero .hero-content {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    gap: 5px;
+  }
+  main .flash-sales .flash-01 {
+    justify-content: center;
+  }
+  main .flash-sales .flash-02 {
+    justify-content: center;
+  }
+  main .flash-sales .flash-02 h1 {
+    font-size: 25px;
+  }
+  main .categories .categories-01 {
+    justify-content: center;
+  }
+  main .categories .categories-02 {
+    justify-content: center;
+  }
+  main .categories .categories-02 h1 {
+    font-size: 25px;
+  }
+  main .best-selling .best-selling-01 {
+    justify-content: center;
+  }
+  main .best-selling .best-selling-02 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  main .best-selling .best-selling-02 h1 {
+    font-size: 25px;
+  }
+  main .experience .experience-items-wrapper {
+    flex-flow: row wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

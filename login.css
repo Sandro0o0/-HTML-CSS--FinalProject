@@ -6,4 +6,11 @@
 .sign-up-container form .form-03 a {
   text-decoration: none;
   color: #db4444;
+}
+
+@media screen and (max-width: 600px) {
+  .sign-up-container .form-wrapper form .form-03 {
+    display: flex;
+    flex-direction: column !important;
+  }
 }/*# sourceMappingURL=login.css.map */

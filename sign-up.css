@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.sign-up-container, .sign-up-container .form-wrapper form .form-03 .sign-up-button {
+.sign-up-container .form-wrapper form .form-03 .sign-up-button {
   display: flex;
   flex-direction: row;
 }
@@ -15,6 +15,10 @@
 }
 
 .sign-up-container {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
   max-width: 90%;
   margin: 55px 0px;
 }
@@ -22,7 +26,7 @@
   max-width: 100%;
 }
 .sign-up-container .form-wrapper {
-  width: 40%;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -71,4 +75,34 @@
 .sign-up-container .form-wrapper form .form-04 a {
   text-decoration: none;
   color: #db4444;
+}
+
+@media screen and (max-width: 1084px) {
+  .sign-up-container {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sign-up-container .form-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sign-up-container {
+    width: 100%;
+    display: flex;
+  }
+  .sign-up-container .img-wrapper {
+    display: none;
+  }
+  .sign-up-container .form-wrapper {
+    width: 100%;
+  }
+  .sign-up-container .form-wrapper button {
+    font-size: 13px;
+  }
+  .sign-up-container .form-wrapper .sign-up-button {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=sign-up.css.map */
