@@ -904,4 +904,7 @@ footer .bottom-footer p {
   main .experience .experience-items-wrapper {
     flex-flow: row wrap;
   }
+  footer .footer-content .footer-items {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
