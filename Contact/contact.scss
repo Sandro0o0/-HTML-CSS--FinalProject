@@ -1,6 +1,6 @@
-@use "./Essentials/Varibles" as v;
-@use "./Essentials/Minxes";
-@use "./Essentials/layout";
+@use "../Essentials/layout";
+@use "../Essentials/Varibles" as v;
+@use "../Essentials/Minxes";
 
 .contact {
   @extend %flex-row;

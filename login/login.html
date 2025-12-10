@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./psevdo.css" />
-    <link rel="stylesheet" href="./extra.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <title>Contact</title>
+    <link rel="stylesheet" href="/sign-in/sign-up.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/extra.css" />
+    <link rel="stylesheet" href="/psevdo.css" />
+    <link rel="stylesheet" href="/login/login.css" />
+    <title>Log in</title>
   </head>
   <body>
     <div class="top-header-wrapper">
@@ -31,10 +31,10 @@
         <nav class="navigation">
           <h1>Exclusive</h1>
           <ul class="header-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Contact/contact.html">Contact</a></li>
+            <li><a href="/About/about.html">About</a></li>
+            <li><a href="/sign-in/sign-up.html">Sign Up</a></li>
           </ul>
           <div class="nav-tools">
             <div class="search-wrapper">
@@ -56,10 +56,10 @@
             <div class="hamburger-menu">
               <label for="hamburger-toggle">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="sign-up.html">Sign Up</a></li>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/Contact/contact.html">Contact</a></li>
+                  <li><a href="/About/about.html">About</a></li>
+                  <li><a href="/sign-in/sign-up.html">Sign Up</a></li>
                 </ul>
                 >
               </label>
@@ -68,57 +68,33 @@
         </nav>
       </div>
     </header>
-
-    <main>
-      <div class="main-wrapper">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <div class="contact">
-          <div class="contact-content">
-            <div class="content-items">
-              <div class="content-01">
-                <i class="fa-solid fa-phone"></i>
-                <h2>Call To Us</h2>
-              </div>
-              <div class="content-02">
-                <p>We are available 24/7, 7 days a week.</p>
-                <p>Phone: +8801611112222</p>
-              </div>
-            </div>
-            <div class="content-items">
-              <div class="content-01">
-                <i class="fa-regular fa-envelope"></i>
-                <h2>Write To US</h2>
-              </div>
-              <div class="content-02">
-                <p>
-                  Fill out our form and we will contact you within 24 hours.
-                </p>
-                <p>Emails: customer@exclusive.com</p>
-                <p>Emails: support@exclusive.com</p>
-              </div>
-            </div>
-          </div>
-          <form action="" class="contact-form">
-            <div class="form-01">
-              <input placeholder="Your Name" type="text" name="" id="" />
-              <input placeholder="Your Email" type="text" name="" id="" />
-              <input placeholder="Your Phone" type="text" name="" id="" />
-            </div>
-            <div class="form-02">
-              <textarea placeholder="Your Message" name="" id=""></textarea>
-            </div>
-            <div class="form-03">
-              <button class="primary-button">Send Message</button>
-            </div>
-          </form>
-        </div>
+    <section class="sign-up-container">
+      <div class="img-wrapper">
+        <img src="../Imgs/sign-up.png" alt="" />
       </div>
-    </main>
+
+      <div class="form-wrapper">
+        <form action="">
+          <div class="form-01">
+            <h1>Log in to Exclusive</h1>
+            <p>Enter your details below</p>
+          </div>
+          <div class="form-02">
+            <input
+              placeholder="Email Or Phone Number"
+              type="email"
+              name=""
+              id=""
+            />
+            <input placeholder="password" type="password" name="" id="" />
+          </div>
+          <div class="form-03">
+            <button class="primary-button log-in-button">Log in</button>
+            <a href="">Forger a Password?</a>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-content">
