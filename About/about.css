@@ -47,6 +47,8 @@
   font-weight: 600;
 }
 .about-wrapper .about-img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 90%;
   height: 100%;
 }
